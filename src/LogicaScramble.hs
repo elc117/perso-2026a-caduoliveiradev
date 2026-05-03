@@ -9,8 +9,10 @@ module LogicaScramble where
 fases :: [(Int, String, String)]
 fases = [
     (1, "lelkahs", "haskell"),
-    (2, "nohtyp", "python"),
-    (3, "avaj", "java")
+    (2, "nhtpoy", "python"),
+    (3, "anicoflun", "funcional"),
+    (4, "rgaapmçãoro", "programação"),
+    (5, "cosculitomocnsiopuloripcaeimnoolcturósivcanotócsil", "pneumoultramicroscopicossilicovulcanoconiótico")
   ]
 
 -- função para buscar o desafio (exemplo buscarDesafio 1 retorna "lelkahs")
@@ -18,7 +20,7 @@ buscarDesafio :: Int -> String
 buscarDesafio n = 
     case [emb | (nivel, emb, _) <- fases, nivel == n] of
         (x:_) -> x
-        []    -> "fase invalida (digite 1,2 ou 3)"
+        []    -> "fase invalida (digite de 1 até 5)"
 
 -- função para conferir a resposta do jogador (exemplo conferir 1 "haskell" retorna True)
 conferir :: Int -> String -> Bool

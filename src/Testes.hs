@@ -23,5 +23,5 @@ main = do
     putStrLn $ "Teste 3 (Conferir Resposta Errada): " ++ (if teste3 then "PASSOU" else "FALHOU")
 
     -- teste 4: verificar se a função buscarDesafio retorna a mensagem de fase inválida para um nível inexistente
-    let teste4 = buscarDesafio 99 == "fase invalida (digite 1,2 ou 3)"
+    let teste4 = buscarDesafio 99 == "fase invalida (digite de 1 até 5)"
     putStrLn $ "Teste 4 (Nível Inválido): " ++ (if teste4 then "PASSOU" else "FALHOU")
