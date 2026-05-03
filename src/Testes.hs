@@ -18,6 +18,9 @@ main = do
     let teste2 = conferir 1 "haskell" == True
     putStrLn $ "Teste 2 (Conferir Resposta Correta): " ++ (if teste2 then "PASSOU" else "FALHOU")
 
+    let teste2b = conferir 1 "HASKELL" == True
+    putStrLn $ "Teste 2b (Conferir Resposta Correta com Maiúsculas): " ++ (if teste2b then "PASSOU" else "FALHOU")
+
     -- teste 3: verificar se a função conferir retorna False para uma resposta incorreta do nível 1
     let teste3 = conferir 1 "python" == False
     putStrLn $ "Teste 3 (Conferir Resposta Errada): " ++ (if teste3 then "PASSOU" else "FALHOU")
