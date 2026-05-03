@@ -1,17 +1,16 @@
 services:
-  - name: demo-scotty-codespace-2026a
+  - name: jogo-scramble-cadu
     type: web
     runtime: docker
     plan: free
     dockerfilePath: ./Dockerfile
     dockerContext: .
-    healthCheckPath: /healthz
     autoDeployTrigger: commit
+    envVars:
+      - key: PORT
+        value: 3000
     buildFilter:
       paths:
         - Dockerfile
         - render.yaml
         - src/**
-      ignoredPaths:
-        - README.md
-        - assets/**    
