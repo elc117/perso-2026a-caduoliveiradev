@@ -28,7 +28,7 @@ buscarDesafio :: Int -> String
 buscarDesafio n =
     case [emb | (nivel, emb, _) <- fases, nivel == n] of
         (x:_) -> x
-        []    -> "fase invalida (digite de 1 até 5)"
+        []    -> "fase invalida (digite de 1 até 5) não coloque letras pois dara erro no site"
 
 -- função para conferir a resposta do jogador (exemplo conferir 1 "haskell" retorna True)
 conferir :: Int -> String -> Bool
